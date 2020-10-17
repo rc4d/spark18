@@ -29,31 +29,46 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+      <div class="container">
+        <div class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Intel-logo.svg/2000px-Intel-logo.svg.png" alt=""
+            width="130" />
+        </div>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>My Portfolio</li>
+            
+            <li>Clients</li>
+            <li><button>Get in touch</button></li>
+          </ul>
+        </nav>
+      </div>
+   
     <style>
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-    
-      li {
-        float: left;
-      }
-    
-      li a {
-        display: block;
-        padding: 8px;
-        background-color: #dddddd;
-      }
+      *{transition:all 0.3s ease-in-out;}
+
+.container{
+  clear:both;
+  overflow:auto;
+}
+
+nav{float:right;}
+
+.logo img{float:left;}
+
+ul li{
+  display: inline-block; padding:10px;
+  font-size:20px; font-family:raleway;
+}
+
+ul li:hover{
+  color:orange;
+  
+}
     </style>
     
-     <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
+    
     
     <!--
       This HTML file is a template.
